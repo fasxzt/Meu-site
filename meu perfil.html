@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil de Marcelo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Reset de margens e bordas */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Estilo da página */
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(135deg, #4a90e2, #9013fe);
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      /* Barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 10;
+      }
+
+      .navbar h1 {
+        margin: 0;
+        font-size: 1.5em;
+      }
+
+      /* Estilo do contêiner */
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        margin-top: 60px; /* Para evitar sobreposição com a navbar */
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      /* Animação de entrada */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Cabeçalho */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
+        font-size: 1.5em;
+      }
+
+      /* Títulos */
+      h2 {
+        color: #4a90e2;
+        margin: 20px 0 10px;
+      }
+
+      /* Parágrafos */
+      p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Lista de interesses */
+      ul {
+        list-style-type: none;
+        margin-top: 10px;
+      }
+
+      ul li {
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      ul li i {
+        margin-right: 8px;
+      }
+
+      /* Botão */
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #9013fe;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #4a90e2;
+      }
+
+      /* Seção de contato */
+      .contact-section {
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      .contact-section h2 {
+        margin-bottom: 10px;
+      }
+
+      .contact-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .contact-icons a {
+        color: #9013fe;
+        font-size: 1.5em;
+        transition: color 0.3s ease;
+      }
+
+      .contact-icons a:hover {
+        color: #4a90e2;
+      }
+
+      /* Rodapé */
+      footer {
+        margin-top: 20px;
+        color: #999;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Perfil de Marcelo</h1>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Bem-vindo ao Perfil de Marcelo</h1>
+      </header>
+
+      <h2>Sobre Marcelo</h2>
+      <p>
+        Marcelo é apaixonado por tecnologia, programação e jogos. Ele também
+        adora carros, especialmente o BMW M5 E60, e está sempre aprendendo algo
+        novo!
+      </p>
+
+      <h2>Interesses</h2>
+      <ul>
+        <li><i class="fas fa-code"></i> Programação (Python)</li>
+        <li><i class="fas fa-gamepad"></i> Jogos online</li>
+        <li><i class="fas fa-music"></i> Música</li>
+        <li><i class="fas fa-car"></i> Carros esportivos</li>
+      </ul>
+
+      <a href="#" class="btn">Conectar</a>
+
+      <div class="contact-section">
+        <h2>Contato</h2>
+        <div class="contact-icons">
+          <a href="https://www.instagram.com/wpx.marcelo/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.youtube.com/@marxxxx" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a
+            href="https://tracker.gg/valorant/profile/riot/Im%20a%20loser%23LEV/overview"
+            target="_blank"
+            ><i class="fas fa-crosshairs"></i
+          ></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2024 Perfil de Marcelo. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>
